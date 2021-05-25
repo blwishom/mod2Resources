@@ -14,8 +14,8 @@ class Receipt {
     this.date = date
   }
 }
-const arr = [1, 3, 4]
+
 
 module.exports = {
-  Invoice, Receipt, arr
+  Invoice, Receipt
 };
