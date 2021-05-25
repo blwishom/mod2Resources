@@ -1,6 +1,6 @@
 // 2093 Short (15-20 minute) Pair programming exercise, Creating a class, Instance methods and variables, Class methods and variables
 
-// Update a class, Ingredient, with instance properties repesenting an 
+// Update a class, Ingredient, with instance properties representing an 
 // ingredient name, cost, quantity, and unit of measurement.
 // Ingredient is located in `ingredient.js`
 
@@ -31,7 +31,7 @@ console.log(apples.calculateCost(3.5)) // 4.55
 apples.printIngredient()
 //         * apples (1 pound) Cost: $1.30
 
-Ingredient.printIngredientList([flour, eggs, water, apples, butter, sugar])
+Ingredient.printIngredientList(flour, eggs, water, apples, butter, sugar)
 // Ingredients:
 //         * flour (5 pound) Cost: $2.25
 //         * eggs (12 piece) Cost: $3.00
