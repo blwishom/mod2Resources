@@ -1,15 +1,11 @@
-/*
 
-imports her: files, modules, etc
-
-code 
+const { BuildingUnit } = require("./buildingUnit");
 
 
-exports
 
-*/
-class Apartment {
+class Apartment extends BuildingUnit {
   constructor(address, bedrooms, baths) {
+    super(unit);
     this.address = address;
     this.bedrooms = bedrooms;
     this.baths = baths;
