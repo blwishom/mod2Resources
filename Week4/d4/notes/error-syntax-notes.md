@@ -4,14 +4,14 @@ Identify the definitions of SyntaxError, ReferenceError, and TypeError
     - encountered at compile-time, ie the code cannot be parsed to determine the instructions
     - since our code cannot be run, SyntaxErrors cannot be caught by a try-catch block
     - common examples would be:
-        - a misspelled function keyword (`funtion broken() {...}`)
+        - a misspelled function keyword (`function broken() {...}`)
         - incorrect number of curly braces
 - ReferenceError
     - when a nonexistent variable is referenced
     - most commonly seen when you mistype a variable name, or refer to one out of the current scope
     ```javascript
     const puppy = "puppy";
-    console.log(pupy); // mistyped variable name
+    console.log(puppy); // mistyped variable name
     ```
 
     ```javascript
