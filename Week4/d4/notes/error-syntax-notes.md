@@ -30,3 +30,5 @@ Identify the definitions of SyntaxError, ReferenceError, and TypeError
     const puppy = "puppy";
     puppy = "apple"; // TypeError: Assignment to constant variable.
     ```
+
+
