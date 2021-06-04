@@ -1,6 +1,6 @@
 #Test Information:
 
--2 hours and 30 minutes for test
+-3 hours for test
 -total of 31 points (passing is 24)
 -14 Multiple Choice Questions
 -2 coding problems:
