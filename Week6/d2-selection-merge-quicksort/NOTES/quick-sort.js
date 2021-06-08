@@ -20,3 +20,18 @@ There are some standard steps when implementing a quick sort algorithm:
 
 
 */
+function quickSort(array) {
+  if (array.length <= 1) {
+    //array of length = 0 || 1 is already sorted
+    return array;
+  }
+
+  let pivot = array.shift(); //The element that we will use to create our left and right arrays
+  let left = array.filter((el) => el < pivot); //elements less than the pivot
+  let right = array.filter((el) => el >= pivot); //elements greater than or equal to the pivot
+
+  let leftSorted = quickSort(left); //recursively call quickSort on each half
+  let rightSorted = quickSort(right);
+
+  return [...leftSorted, pivot, ...rightSorted]; //return the new sorted array
+}
