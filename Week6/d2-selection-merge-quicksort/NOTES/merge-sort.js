@@ -1,8 +1,7 @@
 /*
 Merge sort is the first of the efficient algorithms you will learn. 
 
-Merge sort operates with a much better ime complexity (which we will learn about
-tomorrow) than the more naive approaches we started with.
+Merge sort operates with a much better time complexity than the more naive approaches we started with.
 
 The main ideas of merge sort are:
 1. It is easy to merge elements of two sorted arrays into a single sorted array
