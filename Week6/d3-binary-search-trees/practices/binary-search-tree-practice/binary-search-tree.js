@@ -66,16 +66,46 @@ class BinarySearchTree {
     return false;
   }
 
-  preOrderTraversal() {
+  //Colton and Cam's beautiful creation
+  // inOrderTraversal() {
+  //   // Fill this in
+  //   let data = [];
+  //   function traverse(node) {
+  //     if (node.left) {
+  //       traverse(node.left);
+  //     }
+  //     data.push(node.val);
+  //     if (node.right) {
+  //       traverse(node.right);
+  //     }
+  //   }
+  //   traverse(this.root);
+  //   for (let i = 0; i < data.length; i++) {
+  //     console.log(data[i]);
+  //   }
+  // }
+  preOrderTraversal(currentNode = this.root) {
     // Fill this in
+    if (!currentNode) return;
+    console.log(currentNode.val);
+    this.preOrderTraversal(currentNode.left);
+    this.preOrderTraversal(currentNode.right);
   }
 
-  inOrderTraversal() {
+  inOrderTraversal(currentNode = this.root) {
     // Fill this in
+    if (!currentNode) return;
+    this.inOrderTraversal(currentNode.left);
+    console.log(currentNode.val);
+    this.inOrderTraversal(currentNode.right);
   }
 
-  postOrderTraversal() {
+  postOrderTraversal(currentNode = this.root) {
     // Fill this in
+    if (!currentNode) return;
+    this.postOrderTraversal(currentNode.left);
+    this.postOrderTraversal(currentNode.right);
+    console.log(currentNode.val);
   }
 }
 
