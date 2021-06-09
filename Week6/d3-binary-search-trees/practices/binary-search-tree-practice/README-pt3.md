@@ -26,9 +26,7 @@ prints the current node value. The example tree would print out `3, 5, 4`.
 Read through the specs in `test/binary-search-tree-spec.js` for more details.
 
 [starter]: https://github.com/appacademy-starters/binary-search-tree-practice
-white_check_mark
-eyes
-raised_hands
+
 
 
 
