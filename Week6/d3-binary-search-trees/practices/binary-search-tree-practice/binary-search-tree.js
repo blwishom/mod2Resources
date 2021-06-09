@@ -10,73 +10,27 @@ class TreeNode {
 class BinarySearchTree {
 
   constructor() {
-    this.root = null;
+    // Fill this in
   }
 
-  insert(val, currentNode=this.root) {
-
-    if(!this.root) {
-      this.root = new TreeNode(val);
-      return;
-    }
-
-    if (val < currentNode.val) {
-      if (!currentNode.left) {
-        currentNode.left = new TreeNode(val);
-      } else {
-        this.insert(val, currentNode.left);
-      }
-    } else {
-
-      if (!currentNode.right) {
-        currentNode.right = new TreeNode(val);
-      } else {
-        this.insert(val, currentNode.right);
-      }
-    }
+  insert(val) {
+    // Fill this in
   }
 
   search(val) {
-    let currentNode = this.root;
-
-    while (currentNode) {
-      if (val < currentNode.val) {
-        currentNode = currentNode.left;
-      } else if (val > currentNode.val){
-        currentNode = currentNode.right;
-      } else {
-        return true;
-      }
-    }
-
-    return false;
+    // Fill this in
   }
 
-
-  preOrderTraversal(currentNode=this.root) {
-    if (!currentNode) return;
-
-    console.log(currentNode.val);
-    this.preOrderTraversal(currentNode.left);
-    this.preOrderTraversal(currentNode.right);
+  preOrderTraversal() {
+    // Fill this in
   }
 
-
-  inOrderTraversal(currentNode=this.root) {
-    if (!currentNode) return;
-
-    this.inOrderTraversal(currentNode.left);
-    console.log(currentNode.val);
-    this.inOrderTraversal(currentNode.right);
+  inOrderTraversal() {
+    // Fill this in
   }
 
-
-  postOrderTraversal(currentNode=this.root) {
-    if (!currentNode) return;
-
-    this.postOrderTraversal(currentNode.left);
-    this.postOrderTraversal(currentNode.right);
-    console.log(currentNode.val);
+  postOrderTraversal() {
+    // Fill this in
   }
 
 }
