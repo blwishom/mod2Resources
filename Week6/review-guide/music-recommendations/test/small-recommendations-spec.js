@@ -5,14 +5,14 @@ const smallUsers = require('../data/small-users');
 const musicGenres = require('../data/music-genres');
 
 const assert = require('assert')
+const { MusicRecommendation } = require('../recommendations')
+// let MusicRecommendation = () => {
+//   throw new Error('Could not load recommendations');
+// };
 
-let MusicRecommendation = () => {
-  throw new Error('Could not load recommendations');
-};
-
-try {
-  ({ MusicRecommendation } = require('../recommendations'));
-} catch (e) {}
+// try {
+//   ({ MusicRecommendation } = require('../recommendations'));
+// } catch (e) {}
 
 describe('Small Feed', () => {
 
