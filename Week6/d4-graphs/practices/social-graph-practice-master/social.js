@@ -1,47 +1,76 @@
 // Implement the SocialNetwork class here
 class SocialNetwork {
-
   constructor() {
     this.users = {};
     this.follows = {};
+    this.currentID = 0;
   }
 
   addUser(name) {
+    this.currentID++;
+    const nextID = this.currentID;
 
-    // Fill this out
+    this.users[nextID] = { id: nextID, name: name };
+    this.follows[nextID] = new Set();
 
+    return nextID;
   }
 
   getUser(userID) {
-
-    // Fill this out
-
+    if (this.users[userID]) return this.users[userID];
+    else return null;
   }
 
   follow(userID1, userID2) {
+    if (!this.users[userID1] || !this.users[userID2]) {
+      return false;
+    }
 
-    // Fill this out
-
+    this.follows[userID1].add(userID2);
+    return true;
   }
 
   getFollows(userID) {
-
-    // Fill this out
-
+    return this.follows[userID];
   }
 
   getFollowers(userID) {
+    const followers = new Set();
 
-    // Fill this out
+    for (let id in this.follows) {
+      if (this.follows[id].has(userID)) followers.add(parseInt(id));
+    }
 
+    return followers;
   }
 
   getRecommendedFollows(userID, degrees) {
+    let queue = [[userID]];
 
-    // Fill this out
+    let recommended = [];
 
+    let visited = new Set();
+
+    while (queue.length > 0) {
+      let path = queue.shift();
+      let id = path[path.length - 1];
+      if (!visited.has(id)) {
+        visited.add(id);
+
+        if (path.length > degrees + 2) break;
+
+        if (path.length > 2) recommended.push(id);
+
+        for (let follow of this.follows[id]) {
+          let pathCopy = [...path];
+          pathCopy.push(follow);
+          queue.push(pathCopy);
+        }
+      }
+    }
+
+    return recommended;
   }
-
 }
 
 module.exports = SocialNetwork;
