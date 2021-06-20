@@ -302,7 +302,7 @@ const sayHello = (name) => `hello ${name}`
 
 /*Code Summary
 - fat arrows without curly brackets have an implicit return
-- fat arrows with curly bracks need an explicit return
+- fat arrows with curly braces need an explicit return
 */
 
 
@@ -340,7 +340,7 @@ arrowWrapped() // Hello my name is lucy
 - arrow funcs automatically bind context to the context that they are defined in,
   regular functions do not
 - when we invoke `wrapped` function style, we lose the reference to the pony object
-  since were returnnig a regular func in the `wrappedSayName` function
+  since were returning a regular func in the `wrappedSayName` function
   - thus, `this` will refer to the context the `wrapped` func is invoked in,
 	  which is the global object
 - by returning a fat arrow func in the `wrappedArrowSayName` we have bound the
