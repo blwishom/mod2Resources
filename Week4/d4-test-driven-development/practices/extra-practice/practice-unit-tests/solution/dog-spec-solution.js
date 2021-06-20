@@ -19,7 +19,7 @@ describe("Dog class", () => {
   // creates fresh instance of elephant class for each test
   // ensures result of one test doesnt affect testing of another
   beforeEach("set up dog instance", () => {
-    badger = new Dog("badger", 0.25, ["rollover"]);
+    badger = new Dog("badger", .25, ["rollover"]);
   });
 
   // can nest describes for additional grouping
@@ -31,7 +31,7 @@ describe("Dog class", () => {
 
     // it blocks provide the test case
     it("should set the age property", () => {
-      expect(badger.age).to.equal(0.25);
+      expect(badger.age).to.equal(.25);
       expect(badger).to.have.property("age");
     });
 

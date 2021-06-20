@@ -102,13 +102,13 @@ let badger = new Dog("badger", .25);
 badger.speak();
 ```
 
-Overwriting and adding onto inherited methods
+Overriding and adding onto inherited methods
 
 - without `super` => overwrites
 - calling `super.method(args)` is essentially copying code from parent method into the specified location
 
 ```js
-// TODO : OVERWRITE SPEAK METHOD TO ALSO PRINT "bark bark bark
+// TODO : OVERRIDE SPEAK METHOD TO ALSO PRINT "bark bark bark
 
 class Dog extends Animal {
   constructor(name, age) {
