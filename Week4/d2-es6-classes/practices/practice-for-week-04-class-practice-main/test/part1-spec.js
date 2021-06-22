@@ -3,7 +3,7 @@ const spies = require("chai-spies");
 chai.use(spies);
 const expect = chai.expect;
 
-const { Person } = require("../classPractice");
+const { Person } = require("../class-practice");
 
 describe("Person.prototype", () => {
   let person;
