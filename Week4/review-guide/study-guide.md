@@ -5,6 +5,7 @@
 - time: 3 hours
 - 14 MC questions
 - 13 Coding Specs
+- 21 points to pass
 - Resources Allowed:
   Code you wrote yourself
   AA Open
