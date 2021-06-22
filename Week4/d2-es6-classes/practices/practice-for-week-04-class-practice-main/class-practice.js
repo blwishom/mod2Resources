@@ -52,17 +52,21 @@ higher GPA" If they're equal, return "Both students have the same GPA"
 class Student extends Person {
   // Your code here
   constructor(firstName, lastName, major, GPA) {
-    super(firstName, lastName)
+    super(firstName, lastName);
     this.major = major;
     this.GPA = GPA;
   }
+  introduce() {
+    return `Hello. I am ${this.firstName} ${this.lastName}, and I study ${this.major}.`;
+    // return super.introduce()
+  }
   static compareGPA(stud1, stud2) {
     if (stud1.GPA > stud2.GPA) {
-      return `${stud1.firstName} ${stud1.lastName} has the higher GPA.`
+      return `${stud1.firstName} ${stud1.lastName} has the higher GPA.`;
     } else if (stud2.GPA > stud1.GPA) {
       return `${stud2.firstName} ${stud2.lastName} has the higher GPA.`;
     } else {
-      return `Both students have the same GPA`
+      return `Both students have the same GPA`;
     }
   }
 }
@@ -80,6 +84,9 @@ class Teacher extends Person {
     this.subject = subject;
     this.yearsOfExperience = yearsOfExperience;
   }
+  introduce() {
+    return `Hello. I am ${this.firstName} ${this.lastName} and I have been teaching ${this.subject} for ${this.yearsOfExperience} years.`;
+  }
   static combinedYearsOfExperience(teachers) {
     let count = 0;
     for (const teacher of teachers) {
@@ -88,6 +95,7 @@ class Teacher extends Person {
     return count;
   }
 }
+
 
 /******************************************************************* */
 /*
