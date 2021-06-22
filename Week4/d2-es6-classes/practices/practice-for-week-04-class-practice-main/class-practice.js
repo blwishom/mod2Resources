@@ -13,6 +13,27 @@ Create a class Person that has the following:
 */
 class Person {
   // Your code here
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+  introduce() {
+    return `Hi, I'm ${this.firstName} ${this.lastName}, and I'm ${this.age} years old.`;
+  }
+  static introducePeople(people) {
+    if (!(people instanceof Array)) {
+      throw Error("introducePeople only takes an array as an argument.");
+    } else {
+      people.forEach((element) => {
+        if (element instanceof Person) {
+          element.introduce();
+        } else {
+          throw Error("All items in array must be Person class instances");
+        }
+      });
+    }
+  }
 }
 
 /******************************************************************* */
