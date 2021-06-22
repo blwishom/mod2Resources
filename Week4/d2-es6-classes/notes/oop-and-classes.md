@@ -28,6 +28,12 @@ Polymorphism
 - provides a way to perform a single action in different forms by
   calling the same method on different objects
 
+- OVERRIDING VS OVERLOADING:
+  overriding refers to the fact that you can create instance methods with the same name in child classes and the last defined method (the method defined in the child class) will be the one executed
+  overloading refers to defining an instance method in a child class with the same name, but that takes in different variables. Javascript does NOT support overloading, but does support overriding.\
+
+
+
 Abstraction
 
 - implemented to hide unnecessary data and withdraw relevant data

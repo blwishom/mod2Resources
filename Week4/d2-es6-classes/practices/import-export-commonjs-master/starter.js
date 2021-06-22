@@ -17,4 +17,4 @@ giveMessageToMrsPotato(msg1);
 giveMessageToMrsPotato(msg2);
 giveMessageToMrsPotato(msg3);
 
-console.log(module)
+// console.log(module)
