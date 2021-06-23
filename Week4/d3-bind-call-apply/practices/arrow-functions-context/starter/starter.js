@@ -3,9 +3,10 @@
 class User {
   constructor(name) {
     this.name = name;
+    this.changeNameArrow = (newName) => this.changeName(newName);
   }
 
-  changeName(newName) {
+  changeName (newName) {
     this.name = newName;
     return this.name;
   }
@@ -19,4 +20,4 @@ function greetAfterNameChange(changeName, newName) {
   console.log(`Hi my name is ${name}`);
 }
 
-greetAfterNameChange(michelle.changeName, 'Elle');
+greetAfterNameChange(michelle.changeNameArrow, "Elle");

@@ -22,3 +22,4 @@ let printDog = newDog.print.bind(newDog);
 printDog();
 
 console.log(this);
+

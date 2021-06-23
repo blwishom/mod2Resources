@@ -12,13 +12,12 @@ Cat.prototype.changeName = function (newName) {
   this.sayHello();
 };
 
-
 myCat.sayHello(); // my name is Chatty
 myCat.changeName("Midnight"); // my name is Midnight
 
 // console.log(myCat); // Cat { name: 'Midnight' }
 
-console.log(Cat.prototype)
+console.log(Cat.prototype);
 
 function Unicorn(name, age, color, power) {
   this.name = name;
@@ -29,4 +28,4 @@ function Unicorn(name, age, color, power) {
 
 let sparkleButt = new Unicorn("sparkleButt", 3, "pink", "invisibility");
 console.log(sparkleButt);
-console.log(Unicorn)
+console.log(Unicorn);
