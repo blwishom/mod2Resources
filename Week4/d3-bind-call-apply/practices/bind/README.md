@@ -11,7 +11,7 @@ Clone the project from the [starter].
 - Add a function to the `Employee` class called `sayOccupation` that will `console.log` their occupation
 
 - Try calling `employee.sayName()` inside of a `setTimeout` after 2 seconds
-- Use `bind` to preserve the the context for `employee.sayName()` and `person.sayOccuption()`
+- Use `bind` to preserve the the context for `employee.sayName()` and `employee.sayOccuption()`
   - Call the binded functions in their own `setTimeouts` of 2 seconds and 3 seconds respectively.
   
 [starter]: https://github.com/appacademy-starters/bind-starter
