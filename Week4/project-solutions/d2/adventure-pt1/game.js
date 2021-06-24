@@ -23,6 +23,7 @@ function printHelp() {
     console.log("  Type 'eat <item>' to eat a food item");
     console.log("  Type 'n', 's', 'e', 'w' to move");
     console.log("");
+    processCommand();
 }
 
 function startGame() {
