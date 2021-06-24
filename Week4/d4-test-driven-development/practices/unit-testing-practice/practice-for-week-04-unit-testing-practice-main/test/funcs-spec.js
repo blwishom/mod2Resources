@@ -89,16 +89,5 @@ describe("myRange(min, max, step)", () => {
       expect(actual3).to.eql(expected3);
     });
   });
-  it("should throw an error if num is not type of Number", () => {
-    const string = "i am a string";
-    const object = { i: "am", an: "object" };
-    const array = ["i", "am", "an", "array"];
-
-    const callback1 = () => isOdd(string);
-    const callback2 = () => isOdd(object);
-    const callback3 = () => isOdd(array);
-    expect(callback1).to.throw(Error);
-    expect(callback2).to.throw(Error);
-    expect(callback3).to.throw(Error);
-  });
+  
 });
