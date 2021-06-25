@@ -1,10 +1,10 @@
 const { expect } = require('chai');
 
-const User = require("../class/user.js.js");
-const Doctor = require("../class/doctor.js.js");
-const Patient = require("../class/patient.js.js");
+const User = require("../class/user.js");
+const Doctor = require("../class/doctor.js");
+const Patient = require("../class/patient.js");
 
-const [Appointment, AppointmentError] = require("../class/appointment.js.js");
+const [Appointment, AppointmentError] = require("../class/appointment.js");
 
 describe ('User', function () {
 
