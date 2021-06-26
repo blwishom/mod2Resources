@@ -7,8 +7,8 @@ class Appointment {
     this.doctor = doctor;
     this.patient = patient;
     this.month = month;
-    this.date = month;
-    this.year = month;
+    this.date = date;
+    this.year = year;
     this.hour = hour;
 
     const today = new Date();
