@@ -1,4 +1,3 @@
-// Do not change this
 class LinkedListNode {
   constructor(val) {
     this.value = val;
@@ -8,15 +7,15 @@ class LinkedListNode {
 
 class LinkedList {
   constructor() {
-    // Fill this in
+    // Your code here
   }
 
   addToHead(val) {
-    // Fill this in
+    // Your code here
   }
 
   addToTail(val) {
-    // Fill this in
+    // Your code here
   }
 
   // You can use this function to help debug

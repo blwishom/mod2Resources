@@ -1,4 +1,3 @@
-// Do not change this
 class DoublyLinkedListNode {
   constructor(val) {
     this.value = val;
@@ -9,15 +8,15 @@ class DoublyLinkedListNode {
 
 class DoublyLinkedList {
   constructor() {
-    // Fill this in
+    // Your code here
   }
 
   addToHead(val) { // O(1)
-    // Fill this in
+    // Your code here
   }
 
   addToTail(val) { // O(1)
-    // Fill this in
+    // Your code here
   }
 
   // You can use this function to help debug
@@ -31,6 +30,7 @@ class DoublyLinkedList {
 
     console.log("NULL");
   }
+
 }
 
 module.exports = DoublyLinkedList;
