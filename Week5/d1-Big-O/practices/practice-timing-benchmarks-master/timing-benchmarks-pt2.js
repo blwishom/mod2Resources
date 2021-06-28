@@ -5,6 +5,11 @@ const [addNums, addManyNums] = require("./timing-benchmarks-pt1.js");
 function addNums10(increment) {
 
   // Fill this in
+  let sums = [];
+  for (let n = increment; n <= 10 * increment; n += increment){
+    sums.push(addNums(n))
+  }
+  return sums;
 }
 
 
@@ -12,6 +17,11 @@ function addNums10(increment) {
 function addManyNums10(increment) {
 
   // Fill this in
+  let sums = [];
+  for (let n = increment; n <= 10 * increment; n += increment){
+    sums.push(addManyNums(n))
+  }
+  return sums;
 }
 
 
