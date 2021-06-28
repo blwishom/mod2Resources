@@ -4,6 +4,15 @@ function addNums10Timing(increment) {
 
   // Copy your `addNums10` code here
   // Then, add timing code
+   let sums = [];
+  for (let n = increment; n <= 10 * increment; n += increment) {
+    startTime = Date.now();
+    sums.push(addNums(n));
+    endTime = Date.now()
+
+    console.log(endTime - startTime)
+   }
+   return sums;
 
 }
 
@@ -12,6 +21,15 @@ function addManyNums10Timing(increment) {
 
   // Copy your `addManyNums10` code here
   // Then, add timing code
+  let sums = [];
+  for (let n = increment; n <= 10 * increment; n += increment) {
+    startTime = Date.now()
+    sums.push(addManyNums(n));
+    endTime = Date.now()
+
+    console.log(endTime - startTime)
+  }
+  return sums;
 
 }
 
