@@ -52,6 +52,6 @@ week that you can use)
 by using data structures (sets, queues, linked lists) other than 
 arrays and the corresponding methods to access or add elements 
     -make sure you know the properties of each 
--be able to convert binary to ascii characters and return strings
+-be able to convert hexadecimal to ascii characters and return strings
 
 
