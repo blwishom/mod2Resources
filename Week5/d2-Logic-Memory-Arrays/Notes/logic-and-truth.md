@@ -9,3 +9,11 @@
 
 - De Morgan's Law:
   !(A && B) === !A || !B
+
+
+A | B XOR
+-----
+T | T  => F
+T | F  => T
+F | T  => T
+F | F  => F

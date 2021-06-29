@@ -55,7 +55,7 @@ The digits are 0-9 with A, B, C, D, E and F representing 10, 11, 12, 13, 14 and 
 
 - Hexadecimal is often used as shorthand for representing binary values: one hex digit can represent four bits.
 
-0 = 0b0000 = 0x0
+ 0 = 0b0000 = 0x0
  1 = 0b0001 = 0x1
  2 = 0b0010 = 0x2
  3 = 0b0011 = 0x3
@@ -71,14 +71,23 @@ The digits are 0-9 with A, B, C, D, E and F representing 10, 11, 12, 13, 14 and 
 13 = 0b1101 = 0xD
 14 = 0b1110 = 0xE
 15 = 0b1111 = 0xF
+16 = 0x10
+17 = 0x11
+18 = 0x12
+19 = 0x13
+20 = 0x14
+21 = 0x15
+22 = 0x16
+23 = 0x17
+24 = 0x18
 
 To convert from hexadecimal to decimal, we use the same formula as above:
 
 To convert the hex number 0xF23C:
-160 * C =    1 * 12 = 12
-161 * 3 =   16 *  3 = 48
-162 * 2 =  256 *  2 = 512
-163 * F = 4096 * 15 = 61440
+16^0 * C =    1 * 12 = 12
+16^1 * 3 =   16 *  3 = 48
+16^2 * 2 =  256 *  2 = 512
+16^3 * F = 4096 * 15 = 61440
 
 Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 
