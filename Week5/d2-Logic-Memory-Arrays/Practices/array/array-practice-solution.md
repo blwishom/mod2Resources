@@ -28,8 +28,8 @@ Justification: Removing from the front of the array requires all other values to
 
 ## `arr.unshift()`
 
-Time complexity: O(?)
-Space complexity: O(?)
+Time complexity: O(n)
+Space complexity: O(1)
 Justification: Adding to the front of the array requires all other values to shift to the right by 1 to make space for the first value. This happens in place.
 
 [unshift on MDN][https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/array/unshift]
