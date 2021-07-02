@@ -46,7 +46,7 @@ back.
 
 
 #Things to know for coding portion: 
--implement a queue (you should have an implementation you wrote this 
+-implement a queue or a linked list (you should have an implementation you wrote this 
 week that you can use)
 -identify cases of O(n) complexity and be able to optimize to O(1) 
 by using data structures (sets, queues, linked lists) other than 
